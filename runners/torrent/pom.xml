@@ -26,8 +26,8 @@
     <relativePath>../pom.xml</relativePath>
   </parent>
 
-  <artifactId>beam-runners-round-parent</artifactId>
-  <name>Apache Beam :: Runners :: Round</name>
+  <artifactId>beam-runners-torrent-parent</artifactId>
+  <name>Apache Beam :: Runners :: Torrent</name>
 
   <packaging>pom</packaging>
 

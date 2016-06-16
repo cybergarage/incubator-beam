@@ -21,19 +21,19 @@
 
   <parent>
     <groupId>org.apache.beam</groupId>
-    <artifactId>beam-runners-round-parent</artifactId>
+    <artifactId>beam-runners-torrent-parent</artifactId>
     <version>0.2.0-incubating-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
-  <artifactId>beam-runners-round_1.0</artifactId>
+  <artifactId>beam-runners-torrent_1.0</artifactId>
 
-  <name>Apache Beam :: Runners :: Round :: Core</name>
+  <name>Apache Beam :: Runners :: Torrent :: Core</name>
 
   <packaging>jar</packaging>
 
   <dependencies>
-    <!-- Round dependencies -->
+    <!-- Torrent dependencies -->
 
     <!-- Beam -->
     <dependency>

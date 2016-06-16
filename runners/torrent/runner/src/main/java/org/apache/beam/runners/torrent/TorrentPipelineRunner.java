@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.beam.runners.round;
+package org.apache.beam.runners.torrent;
 
 import org.apache.beam.sdk.Pipeline;
 import org.apache.beam.sdk.options.PipelineOptions;
@@ -45,13 +45,13 @@ import java.util.Map;
  * or on a Flink cluster, depending on the configuration.
  * <p>
  */
-public class RoundPipelineRunner extends PipelineRunner<RoundRunnerResult> {
+public class TorrentPipelineRunner extends PipelineRunner<TorrentRunnerResult> {
 
-  private static final Logger LOG = LoggerFactory.getLogger(RoundPipelineRunner.class);
+  private static final Logger LOG = LoggerFactory.getLogger(TorrentPipelineRunner.class);
 
   @Override
-  public RoundRunnerResult run(Pipeline pipeline) {
-    return new RoundRunnerResult(null, 0);
+  public TorrentRunnerResult run(Pipeline pipeline) {
+    return new TorrentRunnerResult(null, 0);
   }
 
   @Override

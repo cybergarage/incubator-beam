@@ -37,7 +37,7 @@
     <module>direct-java</module>
     <module>flink</module>
     <module>spark</module>
-    <module>round</module>
+    <module>torrent</module>
   </modules>
 
   <build>

@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.beam.runners.round;
+package org.apache.beam.runners.torrent;
 
 import org.apache.beam.sdk.PipelineResult;
 import org.apache.beam.sdk.runners.AggregatorRetrievalException;
@@ -30,15 +30,15 @@ import java.util.Map;
  * has methods to query to job runtime and the final values of
  * {@link org.apache.beam.sdk.transforms.Aggregator}s.
  */
-public class RoundRunnerResult implements PipelineResult {
+public class TorrentRunnerResult implements PipelineResult {
   
   private final Map<String, Object> aggregators;
   
-  public RoundRunnerResult(Map<String, Object> aggregators, long runtime) {
+  public TorrentRunnerResult(Map<String, Object> aggregators, long runtime) {
     this.aggregators = (aggregators == null || aggregators.isEmpty()) ?
         Collections.<String, Object>emptyMap() :
         Collections.unmodifiableMap(aggregators);
-  }I
+  }
 
   @Override
   public State getState() {
